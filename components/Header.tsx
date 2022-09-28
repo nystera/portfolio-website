@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { SocialIcon } from 'react-social-icons';
+import { useTheme } from './UseContext';
 type Props = {};
 
 const Header = (props: Props) => {
+  const { theme, toggleTheme } = useTheme();
+
   return (
     <header
       className="sticky top-0 p-5 flex items-start justify-between
@@ -44,7 +47,9 @@ const Header = (props: Props) => {
         <button
           id="theme-toggle"
           type="button"
-          className="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5"
+          className="text-gray-500 hover:bg-gray-100 focus:ring-gray-200 focus:outline-none focus:ring-4   rounded-lg text-sm p-2.5
+          dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+          onClick={() => toggleTheme()}
         >
           click Me
         </button>
