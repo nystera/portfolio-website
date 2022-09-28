@@ -8,12 +8,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'light-bg': '#1fb6ff',
-        'dark-bg': 'rgb(36,36,36)',
-        'light-primary': '#ff49db',
+        'light-bg': '#d1d1e0',
+        'dark-bg': '#001133',
+        'light-primary': '#29293d',
         'light-secondary': '#000000',
         'dark-primary': '#ffffff',
-        'dark-secondary': '#ffffff',
+        'dark-secondary': '#808080',
+      },
+      animation: {
+        'ping-slow': 'ping 2s cubic-bezier(0, 0, 0.2, 1) infinite'
       }
     },
   },

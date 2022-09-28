@@ -4,9 +4,12 @@
 
 @layer components {
   .hero-button {
-    @apply px-6 py-2 border border-[#242424] rounded-full uppercase
-    text-sm tracking-widest text-gray-500 transition-all 
-    hover:border-[#F7AB0A]/40 hover:text-[#F7AB0A]/40;
+    @apply px-6 py-2 rounded-full uppercase
+    tracking-widest text-light-secondary transition-all 
+    md:border-2 md:border-dark-bg
+    hover:border-dark-bg/40 hover:text-dark-bg/40 hover:scale-110
+    dark:hover:border-light-bg/40 dark:hover:text-light-bg/40
+    dark:text-dark-secondary dark:border-light-bg;
   }
   ,
   .test {
