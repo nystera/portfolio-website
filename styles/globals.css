@@ -11,8 +11,8 @@
     dark:hover:border-light-bg/40 dark:hover:text-light-bg/40
     dark:text-dark-secondary dark:border-light-bg;
   }
-  ,
-  .test {
-    @apply text-gray-500;
+  .header-title {
+    @apply absolute top-24 uppercase tracking-[20px] text-2xl
+    text-light-secondary dark:text-dark-secondary;
   }
 }
